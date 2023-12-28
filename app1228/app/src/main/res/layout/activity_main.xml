@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- match_parent : 부모 태크의 크기에 맞춤 -->
+<!-- wrap_content : 자신 컨텐츠 크기에 맞춤 -->
+<!-- DP : Density-Independent Pixels, 화면의 크기가 달라도 동일한 비율로 보여주기 위해 안드로이드에서 정의한 단위, 안드로이드의 기준 단위가 160DPI 이므로 160DPI 일 경우 DP와 PX은 크기가 같음-->
+<!-- SP : Scale-Independent Pixels, 안드로이드에서 시스템 전체에서 보여지는 텍스트의 크기를 선택할 수 있는데 SP는 해당 설정에 영향을 받음-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    android:orientation="vertical">
+
+<!--    margin : 태그와 태그 사이의 간격 설정, layout_margin, layout_marginTop, layout_marginRight, layout_marginBottom, layout_marginLeft 가 존재함 -->
+<!--    padding : 태그의 테두리와 컨텐츠 사이의 간격 설정, paddingTop, paddingRight, paddingBottom, paddingLeft 가 존재함 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0000FF"
+        android:text="BUTTON1"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="100dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="60dp"
+        android:paddingStart="80dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:text="BUTTON2" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="test"
+        android:textStyle="normal"
+        android:textSize="25sp" />
+</LinearLayout>

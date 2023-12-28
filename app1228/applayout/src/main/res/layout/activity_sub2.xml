@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+<!--    gravity : 태그 자신이 포함하고 있는 컨텐츠의 위치를 지정함, left, right, top, bottom, center, | 기호를 사용하여 여러개의 옵션을 동시에 사용할 수 있음, 기본값 left|top -->
+<!--    layout_gravity : 부모 태그를 기준으로 자신의 위치를 지정함, eft, right, top, bottom, center, | 기호를 사용하여 여러개의 옵션을 동시에 사용할 수 있음, 기본값 left|top -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#FF0000"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="gravity, layout_gravity로 정렬하기"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
