@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- orientation : GridLayout 사용 시 자식 태그의 정렬 방식을 설정하는 속성, horizontal,vertical -->
+    <!-- rowCount : GridLayout 사용 시 orientation 의 설정값이 vertical 인 경우 자식 태그를 지정한 라인에 맞추고 남은 태그를 다음 칸으로 배치  -->
+    <!-- columnCount : GridLayout 사용 시 orientation 의 설정값이 horizontal 인 경우 자식 태그를 지정한 칸에 맞추고 남은 태그를 다음 라인으로 배치 -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <Button android:text="A"/>
+        <Button android:text="B"/>
+        <Button android:text="C"/>
+        <Button android:text="D"/>
+        <Button android:text="E"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <Button android:text="A"/>
+        <Button android:text="B"/>
+        <Button android:text="C"
+            android:layout_row="1"
+            android:layout_column="1"/>
+        <Button android:text="D"/>
+        <Button android:text="E"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <!--    layout_gravity : GridLayout 사용 시 다른 row, column 에 있는 태그의 크기가 클 경우 layout_gravity 속성의 fill, fill_horizontal, fill_vertical 을 사용하여 큰 태그의 크기에 맞게 채울 수 있음 -->
+        <Button android:text="A"/>
+        <Button android:text="버튼의 컨텐츠 만큼의 크기"/>
+        <Button android:text="C"/>
+        <Button android:text="D"/>
+        <!--    <Button android:text="E"-->
+        <!--        android:layout_gravity="fill_horizontal"/>-->
+        <Button android:text="E"/>
+        <Button android:text="F"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="end"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+<!--        layout_columnSpan : 지정한 크기만큼 칸을 합함  -->
+<!--        layout_rowSpan : 지정한 크기만큼 라인을 합함 -->
+        <Button android:text="A"
+            android:layout_gravity="fill"
+            android:layout_rowSpan="2"
+            android:layout_columnSpan="2"/>
+        <Button android:text="B"/>
+        <Button android:text="C"/>
+        <Button android:text="D"/>
+        <Button android:text="E"/>
+        <Button android:text="F"/>
+
+    </GridLayout>
+
+</LinearLayout>
