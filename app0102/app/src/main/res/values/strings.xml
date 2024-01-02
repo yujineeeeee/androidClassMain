@@ -3,4 +3,5 @@
     <string name="txt_start">Start</string>
     <string name="txt_stop">Stop</string>
     <string name="txt_reset">Reset</string>
+    <string name="intro">hello</string>
 </resources>
