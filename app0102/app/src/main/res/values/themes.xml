@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.App0102" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.App0102" parent="Base.Theme.App0102" />
+
+
+<!--    layout xml 파일의 view 클래스에 style 속성에 입력할 이름을 미리 지정 -->
+<!--    지정된 속성대로 해당 style이 적용됨 -->
+    <style name="MyTextStyle">
+        <item name="android:textSize">@dimen/txt_size4</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+<!--    parent 속성을 사용하여 다른 style을 상속받아 사용할 수 있음 -->
+<!--    부모 style에서 상속 받은 속성과 동일한 속성이 있을 경우 자식의 속성을 사용함 -->
+    <style name="MyTextStyleSub" parent="MyTextStyle">
+        <item name="android:textColor">#A566FF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/app_name</item>
+    </style>
+</resources>
