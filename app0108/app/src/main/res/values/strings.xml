@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">app0108</string>
+    <string name="recyclerView">리사이클러뷰 사용하기</string>
+    <string name="btnRecyclerViewAdd">아이템 추가</string>
+    <string name="btnRecyclerViewRemove">아이템 제거</string>
+    <string name="DrawerLayout">드로워 레이아웃 사용하기</string>
+    <string name="btnViewPager2">뷰 페이저 2 사용하기</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="one_fragment">첫번째 프래그먼트</string>
+    <string name="two_fragment">두번째 프래그먼트</string>
+    <string name="three_fragment">세번째 프래그먼트</string>
+    <string name="btnIntentTest1">툴로 자동 생성된 엑티비티</string>
+    <string name="btnIntentTest2">사용자가 직접 만든 엑티비티</string>
+    <string name="btnCalculator">계산기</string>
+</resources>
