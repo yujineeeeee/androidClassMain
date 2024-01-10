@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    카메라롤 사진 찍었을 경우 디바이스에 저장할 파일 위치 설정 -->
+    <external-path
+        name="myfiles"
+        path="Android/data/com.bitc.app0110/files/Pictures" />
+</paths>

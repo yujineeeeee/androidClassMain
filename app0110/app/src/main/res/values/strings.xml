@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">app0110</string>
+    <string name="btnBindService">바인드 서비스 사용하기</string>
+    <string name="btnBindServiceStart">바인드 서비스 시작</string>
+    <string name="btnBindServiceStop">바인드 서비스 종료</string>
+    <string name="btnMp3Player">서비스로 MP3 파일 재생하기</string>
+    <string name="btnMp3Play">재 생</string>
+    <string name="btnMp3Stop">정 지</string>
+    <string name="btnMp3Pause">일시정지</string>
+    <string name="btnProvider">콘텐츠 프로바이더 사용하기</string>
+</resources>
