@@ -31,18 +31,14 @@ class LoginActivity : AppCompatActivity() {
                 sharedPref.edit().run {
                     putString("id", userInfo.id)
                     putString("name", userInfo.name)
-                    putString("email", userInfo.email)
-                    putString("phone", userInfo.phone)
+                    putString("email", userInfo?.email)
+                    putString("phone", userInfo?.phone)
                     commit()
                 }
 
-//                val sharedPref = activity?.getSharedPreferences(
-//                    getString(R.string.preference_file_key), Context.MODE_PRIVATE)
 
-//                Toast.makeText(this, "아이디 ${sharedPref.getString("id","")}", Toast.LENGTH_SHORT).show()
-
-//                val intent = Intent(this, MainActivity::class.java)
-//                startActivity(intent)
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             }
             else {
                 Toast.makeText(this, "아이디 또는 비밀번호가 틀렸습니다.", Toast.LENGTH_SHORT).show()

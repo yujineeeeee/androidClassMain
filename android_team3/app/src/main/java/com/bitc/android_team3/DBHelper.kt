@@ -3,6 +3,7 @@ package com.bitc.android_team3
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
 
 class DBHelper(context: Context) : SQLiteOpenHelper(context, "android_team3_db", null, 1) {
     override fun onCreate(db: SQLiteDatabase?) {
@@ -60,18 +61,14 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, "android_team3_db",
 
     //    회원 정보 가져오기
     fun userInfo(db: SQLiteDatabase, id: String): UserInfoData {
-        var sql = "SELECT id, name, email, phone FROM user "
-        sql += "WHERE id = '$id' "
+        var sql = "SELECT id, name, email, phone FROM user WHERE id = '$id' "
 
         var dataSet = db?.rawQuery(sql, null)
 
         lateinit var userInfo: UserInfoData
 
         if(dataSet!!.moveToNext()){
-            userInfo.id = dataSet.getString(0)
-            userInfo.name = dataSet.getString(1)
-            userInfo.email = dataSet.getString(2)
-            userInfo.phone = dataSet.getString(3)
+            userInfo = UserInfoData(id = dataSet.getString(0), name = dataSet.getString(1), email = dataSet.getString(2), phone = dataSet.getString(3), pw = null)
         }
 
         return userInfo

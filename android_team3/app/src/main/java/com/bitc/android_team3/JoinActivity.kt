@@ -1,5 +1,6 @@
 package com.bitc.android_team3
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -149,17 +150,16 @@ class JoinActivity : AppCompatActivity() {
 
                     if(result){
                         Toast.makeText(this, "회원가입 완료", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
                     }
                     else{
                         Toast.makeText(this, "회원가입 실패", Toast.LENGTH_SHORT).show()
                     }
                 }
-
             }
         }
 
     }
-
-
 
 }
